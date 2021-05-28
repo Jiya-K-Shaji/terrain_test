@@ -1,0 +1,178 @@
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+body{margin:0px; padding:0px; font-family: 'Open Sans', sans-serif;}
+section{width:100%; max-width:1200px; margin:0px auto; display:table; position:relative;}
+h1{margin:0px auto; display:table; font-size:26px; padding:40px 0px; color:#002e5b; text-align:center;}
+h1 span{font-weight:500;}
+
+header{width:100%; display:table;  margin-bottom:50px;}
+#logo{float:left; padding:20px 0px;}
+#logo img{
+  height: 24px;
+}
+nav{width:auto;}
+nav ul li{float:left; margin: 2px 0px 0 10px;}
+nav ul li:first-child{padding-left:60px;}
+nav ul li:last-child{padding-right:0px;}
+nav ul li a{color:#1f1f1f; font-size:16px; padding: 25px 10px; display:inline-block; transition: all 0.5s ease 0s;}
+
+
+
+.toggle-menu ul{display:table; width:25px;}
+.toggle-menu ul li{width:100%; height:3px; background-color:#002e5b; margin-bottom:4px;}
+.toggle-menu ul li:last-child{margin-bottom:0px;}
+
+input[type=checkbox], .toggle-menu{display:none;}
+
+
+  [type="radio"]{
+    display: none;
+  }
+  label{
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 18px;
+    color: #808080;
+  }
+  /* [type="radio"]:checked + label{
+     
+  } */
+  [type="radio"]:nth-of-type(2):checked ~ .gallery .card:not(.a-e),
+  [type="radio"]:nth-of-type(3):checked ~ .gallery .card:not(.f-j),
+  [type="radio"]:nth-of-type(4):checked ~ .gallery .card:not(.k-o),
+  [type="radio"]:nth-of-type(5):checked ~ .gallery .card:not(.p-t),
+  [type="radio"]:nth-of-type(6):checked ~ .gallery .card:not(.u-z)
+  {
+    display: none;
+  }
+  
+  .gallery-outer{
+    
+    margin-top: 50px;
+  }
+  .gallery-head-inner{
+    text-align: center;
+  }
+  .gallery-head{
+      margin-bottom: 50px;
+  }
+  .gallery{
+    display: grid;
+      justify-content: center;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid #8e8a8ac4;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+  }
+  .gallery-inner{
+    margin: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    transition: box-shadow 0.35s;
+  }
+  .gal__image{
+    width: 100%;
+    object-fit: cover;
+  }
+  .artgal-logo{
+   /* text-align: left;*/
+  }
+  .gal__name{
+    font-family: PassengerSerif;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    padding: 10px 0;
+  }
+  .art_place{
+    font-family: PassengerSerif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #808080;
+  }
+  
+  .searchContainer{
+    float: right;
+  
+  }
+  .searchBox{
+    border: none;
+  }
+  .searchIcon{
+    color: #808080;
+  }
+  
+.pagination{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.pagination a{
+  width: 55px;
+  text-align: center;
+  color: #808080;
+  font-size: 18px;
+  font-weight: 700;
+  transition: .3s linear;
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+section{max-width:95%;}
+}
+
+@media only screen and (max-width: 980px) {
+header{padding:20px 0px;}
+#logo{padding:0px;}
+input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
+input[type=checkbox]:fous{background:none;}
+.toggle-menu {float:right; padding:8px 0px; display:block; cursor:pointer; }
+input[type=checkbox]:checked ~ nav {display:block;}
+
+nav{display:none; position:absolute; right:0px; top:53px; background-color:#002e5b; padding:0px; z-index:99;}
+nav ul{width:auto;}
+nav ul li{float:none; padding:0px; width:100%; display:table;}
+nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
+nav ul li a i{color:#fde428; padding-right:13px;}
+}
+
+@media only screen and (max-width: 980px) {
+.content{width:90%;}
+}
+
+@media only screen and (max-width: 568px) {
+h1{padding:25px 0px;}
+h1 span{display:block;}
+}
+
+@media only screen and (max-width: 480px) {
+section {max-width: 90%;}
+}
+
+@media only screen and (max-width: 360px) {
+h1{font-size:20px;}
+label{padding:5px 0px;}
+#logo{font-size: 20px;}
+nav{top:47px;}
+}
+
+@media only screen and (max-width: 320px) {
+h1 {padding: 20px 0px;}
+}
