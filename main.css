@@ -55,7 +55,10 @@ input[type=checkbox], .toggle-menu{display:none;}
     text-align: center;
   }
   .gallery-head{
-      margin-bottom: 50px;
+    margin-bottom: 50px;
+    font-family: NHaasGroteskTXPro-55Rg;
+   font-size: 30px;
+    color: #1f1f1f;
   }
   .gallery{
     display: grid;
@@ -106,6 +109,7 @@ input[type=checkbox], .toggle-menu{display:none;}
   
   .searchContainer{
     float: right;
+    margin-top: -18px;
   
   }
   .searchBox{
@@ -148,9 +152,13 @@ input[type=checkbox]:checked ~ nav {display:block;}
 
 nav{display:none; position:absolute; right:0px; top:53px; background-color:#002e5b; padding:0px; z-index:99;}
 nav ul{width:auto;}
-nav ul li{float:none; padding:0px; width:100%; display:table;}
+nav ul li{float:none; padding:0px; width:100%; display:table; padding-left: 0px !important;}
 nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
 nav ul li a i{color:#fde428; padding-right:13px;}
+.searchContainer {
+  float: none;
+  margin-top: 18px;
+}
 }
 
 @media only screen and (max-width: 980px) {
